@@ -1,0 +1,5 @@
+{
+  "name": "xopen",
+  "version": "1.0.0",
+  "description": "Open a file in its default application, across platforms"
+}
