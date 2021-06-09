@@ -38,11 +38,21 @@ export default class GDVR_REACTVR_SITEPOINT_GALLERY extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({src: nextProps.src});
+  }
+
   render() {
     return (
       <View>
         <Canvas
           src={this.state.src}
+        />
+        <UI
+          buttonConfig={Config}
+          onClick={(key)=>{
+          this.setState({src: Config[key].imageSrc});
+          }}
         />
       </View>
     );
