@@ -52,7 +52,7 @@ export default class GDVR_REACTVR_SITEPOINT_GALLERY extends React.Component {
         <UI
           buttonConfig={Config}
           onClick={(key)=>{
-          this.setState({src: Config[key].imageSrc});
+            this.setState({src: Config[key].imageSrc});
           }}
         />
       </View>
