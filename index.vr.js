@@ -4,6 +4,7 @@ import {
   View,
 } from 'react-vr';
 import Canvas from './components/Canvas';
+import UI from './components/UI';
 
 const Config = [
   {
